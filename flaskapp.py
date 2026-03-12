@@ -31,8 +31,11 @@ def hello(name):
 
 @app.route('/analyze/<word>')
 def analyze(word):
+    # YOUR CODE HERE
+    # Count the characters in `word` and return as a string
+    # Example: /analyze/Drake  →  should display: 5
     num = str(len(word))
-    return render_template('analyze.html', word=word, num=num)
+    return num
 
 
 # ============================================================
